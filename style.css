@@ -1,0 +1,133 @@
+.todos-head{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+#logo{
+    width: 50px;
+    align-items: center;
+}
+ .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding-left: 20px;
+    background: #edeef0;  
+
+ }
+ input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 15px;
+ }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #e6859c 0%, #588fd2 100%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+  }
+  ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("uncheck-128.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  ul li.checked{
+    color: #e44545;
+    text-decoration: line-through;
+  }
+  ul li.checked::before{
+    background-image: url("check.png");
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #ee9595;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10rem;
+  }
+  ul li span:hover{
+    background: #ecf3ff;
+  }
+
+  .new-task {
+    width: 100%;
+    max-width: 740px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+
+  }
+  .new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+}
+
+.new-task input:focus {
+  outline: none;
+  border-color: #2b292d;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #f5b172;
+  color: #ffffff;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+.new-task button:hover {
+  background-color: #99dfe6;
+}
+
+
+
